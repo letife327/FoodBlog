@@ -38,16 +38,19 @@ header .menu nav .home-color {
     display: none;
   }
   header .iconbox {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #eceef0;
     color: #000000;
-    padding: 16px;
+    width: 50px;
+    height: 50px;
     border-radius: 4px;
   }
 }
 
 #beautiful {
-  background-color: #f4fafb;
+  background-color: red;
 }
 #beautiful .box h1 {
   font-size: 68px;
@@ -87,7 +90,7 @@ header .menu nav .home-color {
   }
   #beautiful .box h1 {
     margin-right: 0;
-    padding: 0 60px;
+    padding: 0;
   }
   #beautiful .box h5 {
     font-size: 22px;
@@ -103,7 +106,7 @@ header .menu nav .home-color {
   font-size: 60px;
   font-weight: 700;
   color: #36b3bd;
-  width: 400px;
+  max-width: 400px;
 }
 #thehome .textbox h5 {
   font-size: 20px;
@@ -119,7 +122,7 @@ header .menu nav .home-color {
   font-size: 20px;
 }
 #thehome .imgbox {
-  width: 520px;
+  max-width: 520px;
 }
 @media screen and (max-width: 992px) {
   #thehome .textbox {
@@ -139,6 +142,9 @@ header .menu nav .home-color {
   }
 }
 
+#works {
+  background-color: #36b126;
+}
 #works h1 {
   font-size: 60px;
   font-weight: 700;
@@ -146,7 +152,7 @@ header .menu nav .home-color {
   margin: 0 0 60px;
 }
 #works .imgbox {
-  width: 350px;
+  max-width: 350px;
 }
 #works .textbox {
   padding: 35px 55px;
@@ -173,12 +179,17 @@ header .menu nav .home-color {
     max-width: 400px;
   }
 }
+@media screen and (max-width: 500px) {
+  #works .textbox {
+    padding: 0;
+  }
+}
 
 #browse {
   background-color: #F5FBFC;
 }
 #browse .textbox {
-  width: 500px;
+  max-width: 500px;
   text-align: center;
 }
 #browse .textbox h1 {
@@ -253,6 +264,38 @@ header .menu nav .home-color {
   padding: 17px 53px;
   margin: 50px 0 0;
 }
+@media screen and (max-width: 500px) {
+  #browse .responsive {
+    flex-direction: column;
+  }
+  #browse .responsive .btn {
+    margin: 0 0 15px;
+    padding: 0;
+    max-width: 450px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #browse .box {
+    max-width: 450px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 0;
+  }
+  #browse .box .textbox {
+    padding: 15px 0;
+  }
+  #browse .box .textbox .minibox {
+    flex-direction: column;
+  }
+  #browse .box .textbox .minibox h5 {
+    margin-top: 15px;
+  }
+  #browse .box .imgbox {
+    max-width: 350px;
+  }
+}
 
 #order .imgbox {
   width: 600px;
@@ -285,7 +328,7 @@ header .menu nav .home-color {
 }
 @media screen and (max-width: 992px) {
   #order .imgbox {
-    width: 600px;
+    max-width: 600px;
   }
   #order .textbox {
     display: flex;
@@ -320,7 +363,7 @@ header .menu nav .home-color {
   font-size: 20px;
 }
 #callour .imgbox {
-  width: 520px;
+  max-width: 520px;
 }
 @media screen and (max-width: 992px) {
   #callour .textbox {
@@ -369,6 +412,22 @@ header .menu nav .home-color {
     margin-top: 20px;
   }
   #support .bgc .textbox {
-    padding: 50px 75px 50px 0;
+    padding: 50px 0 50px 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  #support .imbox {
+    max-width: 450px;
+  }
+  #support .bgc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #support .bgc .textbox h1 {
+    margin: 0;
+  }
+  #support .bgc .textbox .btn {
+    margin: 30px 0 0;
   }
 }/*# sourceMappingURL=style.css.map */

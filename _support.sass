@@ -22,8 +22,22 @@
             background-color: #ffffff
             color: #33B5BE
             margin: 30px 0 0 40px
+
     @media screen and ( max-width: 992px )
         .bgc
             margin-top: 20px
             .textbox
-                padding: 50px 75px 50px 0
+                padding: 50px 0 50px 0
+    @media screen and ( max-width: 500px  )
+        .imbox
+            max-width: 450px
+        .bgc
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            .textbox
+                h1
+                    margin: 0
+                .btn
+                    margin:  30px 0 0
+            
